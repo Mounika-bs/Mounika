@@ -1,0 +1,140 @@
+1.what is dictionary in python? Explain with an example.
+
+A Dictionary is used to map or associate the things you want to store the keys you need to get them. Dictionary are defined into two elements keys and values.keys will be a single element. example of dictionary: example of dictionary: d1={"apple":1,"mango":2,"pineapple":4} apple,mango,banana are keys 1,2,4 are known as values
+
+2.what is dictionary in python? Explain with an example.
+
+A Dictionary is used to map or associate the things you want to store the keys you need to get them. Dictionary are defined into two elements keys and values.keys will be a single element. example of dictionary: example of dictionary: d1={"apple":1,"mango":2,"pineapple":4} apple,mango,banana are keys 1,2,4 are known as values
+
+3.write a python program to sum all items in a list.
+
+sum=0
+list=[12,3,5,67,3,10]
+for i in  range(0,len(list)):
+    sum=sum+list[i]
+print("sum of elements in the list is:",sum)
+sum of elements in the list is: 100
+
+4.write a python program to create a list of empty dictionaries.
+
+n=3
+l=[{} for _ in range(n)]
+print(l)
+[{}, {}, {}]
+
+5.write a python program to access dictionary keys element by index.
+
+d1={"hello":32,"gitam":12,"hyderabad":21,"banglore":36,"vizag":5}
+print("original dictionary is:"+str(d1))
+print("key values are:")
+for i in d1:
+    print(i)
+original dictionary is:{'hello': 32, 'gitam': 12, 'hyderabad': 21, 'banglore': 36, 'vizag': 5}
+key values are:
+hello
+gitam
+hyderabad
+banglore
+vizag
+
+6.Python program to iterate over dictionaries using for loop.
+
+d1={"banglore":32,"vizag":12,"hyderabad":21,"mumbai":36,"chennai":5}
+for k,v in d1.items():
+    print(k,v)
+banglore 32
+vizag 12
+hyderabad 21
+mumbai 36
+chennai 5
+
+7.Python program to sum all items in the dictionary.
+
+def sum(d2):
+    sum=0
+    for i in d2:
+        sum=sum+d2[i]
+    return sum
+d2={"a":12,"b":8,"c":15}
+print("sum of items in the dictionary:",sum(d2))
+sum of items in the dictionary: 35
+
+8.write a python script to concatenate the following dictionaries to create a new one. sample dictionary dic1={1:10,2:20} dic2={3:30,4:40} dic3={5:50,6:60}
+
+dic1={1:10,2:20}
+dic2={3:30,4:40}
+dic3={5:50,6:60}
+dic4={}
+for d in (dic1,dic2,dic3):
+    dic4.update(d)
+print(dic4)
+{1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+
+10.write a python program to create a tuple.
+
+t=5,10,15,20,25
+print(t)
+(5, 10, 15, 20, 25)
+
+11.write a python program to create a tuple with different data types.
+
+t1=(1,6.9,"hi",False)
+print(t1)
+(1, 6.9, 'hi', False)
+
+12.write a python program to convert a tuple in to a string.
+
+tuple=('h','e','l','l','o')
+str=''.join(tuple)
+print(str)
+hello
+
+13.write a python program to slice a tuple.
+t=(2,4,3,5,4,6,7,8,6,1)
+slice=t[3:5]
+print(slice)
+(5, 4)
+
+14.write a python program to find the length of a tuple.
+
+t3=(10,6,8,7,9,0,6,5)
+print(len(t3))
+8
+
+15.write a python program to convert a tuple into a dictionary.
+
+def convert(tup,di):
+    for a,b in tup:
+        di.setdefault(a,[]).append(b)
+    return di
+tups=[("akash",10),("gowtham",12),("ajay",25)]
+dictionary={}
+print(convert(tups,dictionary))
+{'akash': [10], 'gowtham': [12], 'ajay': [25]}
+
+16.write a python program to reverse a tuple.
+
+def reverse(tuple):
+    new_tuple=tuple[::-1]
+    return new_tuple
+tuple=(1,2,3,4,5,6,7,8,9)
+print(reverse(tuple))
+(9, 8, 7, 6, 5, 4, 3, 2, 1)
+
+17.write a python program to convert a list of tuples into a dictionary.
+
+l=[("x",1),("y",2),("z",3)]
+d={}
+for a,b in l:
+    d.setdefault(a, []).append(b)
+print(d)
+{'x': [1], 'y': [2], 'z': [3]}
+
+18.write a python program to convert a list in to a tuple.
+
+def convert(list): 
+    return (*list, ) 
+​
+list = [1, 2, 3, 4] 
+print(convert(list)) 
+(1, 2, 3, 4)
